@@ -1,0 +1,92 @@
+.App {
+  background: #111a28;
+}
+
+nav {
+  background: #2b3341;
+  padding: 10px 15px;
+  display: flex;
+  height: 10vh;
+  justify-content: center;
+  align-items: center;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+.menu {
+  list-style-type: none;
+  display: flex;
+  flex: 2;
+}
+.logo {
+  display: flex;
+  font-size: 20px;
+  padding: 7.5px 10px 7.5px 0;
+  flex: 1;
+}
+.input-group {
+  height: 25px;
+  margin-left: 20px;
+}
+
+.item {
+  flex: 1;
+  padding: 10px;
+}
+.item a:hover {
+  color: rgb(185, 165, 165);
+  text-decoration: none;
+  cursor: pointer;
+}
+.card {
+  background-color: #2b3341;
+  margin: 5px;
+  width: 30%;
+}
+@media only screen and (max-width: 800px) {
+  .card {
+    width: 45%;
+  }
+  .menu {
+    display: none;
+  }
+  .input-group {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .card {
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
